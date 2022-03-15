@@ -1,0 +1,308 @@
+*{
+    box-sizing: inherit;
+}
+/*==============Defining different color value================*/
+:root{
+    --wheat-color:rgb(250, 235, 215);
+    --black-text:rgba(51,51,51,.7);
+}
+
+html,body{
+    margin: 0;
+    
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+/*Menu style*/
+header .menu-btn{
+    display: none;
+    background-color: var(--wheat-color);
+    font-size: larger;
+    padding: 5px 12px;
+    color: #333333dd;
+    text-shadow: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+header .menu-btn:hover{
+    color: #000000cd;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.59);
+}
+header .material-icons{
+    vertical-align: middle;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px -1px black;
+    margin-bottom: 2%;
+    background-color: var(--wheat-color);
+    z-index: 3;
+}
+
+#menu-list{
+    list-style-type: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--wheat-color);
+    text-align: center;
+    font-size: larger;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 0 10px;
+}
+
+.menu-item{
+    padding: 15px ;
+}
+.menu-item a{
+    color: #333333b3;
+    border-bottom: 1px solid #00000000;
+    text-decoration: none;
+    text-shadow: none;
+    transition: border-bottom 0.5s,text-shadow 0.5s;
+}
+
+ .menu-item a:hover{
+    color: #000000ff;
+    border-bottom: 0.5px solid black;
+    text-shadow: 0 0 1px black;
+}
+
+/*===================================================*/
+
+/*==========Page overview style==========*/
+.page-overview{
+    position: relative;
+    width: 100%;
+    margin: 0 0 2% 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0 0;
+}
+.page-overview .overview-content{
+    position: relative;
+}
+
+.overview-content img{
+    width: 100%;
+}
+
+.ovtext{
+    position: absolute;
+    width: fit-content;
+    top: 60%;
+    left: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    z-index: 1;
+}
+.ovtext span{
+    display: block;
+    margin: 8px 0;
+    padding: 10px 17px;
+    border-radius: 3px;
+    background-color: var(--wheat-color);
+}
+
+.price{
+    position: relative;
+    padding: 0 20%;
+}
+
+.price span{
+    border: 1px solid black;
+    border-radius: 10px 0;
+    display: block;
+    width: 60%;
+    height: 40%;
+    font-size: 200%;
+    text-align: center;
+    background-color: var(--wheat-color);
+    padding:8px 2%;
+}
+.price .p1{
+    position: absolute;
+    top: 0;
+}
+.price .p2{
+    position: absolute;
+    bottom: 0;
+}
+
+/*===================================================*/
+.item ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    gap: 15px 25px;
+    line-height: 1.6em;
+    margin: 20px 10px 20px 0;
+}
+
+.item ul li{
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 3px 1px;
+    box-shadow: none;
+    transition: box-shadow 0.3s;
+}
+.item li:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+/*===================================================*/
+.featured-item{
+    display: flex;
+    background-color: var(--wheat-color);
+    background-image: linear-gradient(to left,rgba(0,0,0,0.76),rgba(0,0,0,.4),rgba(0,0,0,.2),rgba(0,0,0,0.1));
+    padding: 15px 10px;
+    line-height: 1.6em;
+    margin-top: 5%;
+}
+
+.featured-item .btn{
+    display: inline-block;
+    border: 1px solid #00000077;
+    border-radius: 4px;
+    padding: 5px 7px;
+    color: #00000077;
+    letter-spacing: 1px;
+    box-shadow: none;
+    transition:border 0.3s,color 0.3s,box-shadow 0.3s;
+}
+
+.btn:hover{
+    color: #000;
+    border: 1px solid black;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+/*===================================================*/
+/*Footer Section Style*/
+footer{
+    padding: 17px 5px;
+    background-color: #222;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 1.9em;
+}
+
+footer h3{
+    color: #ffffff88;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    padding-left: 37px;
+}
+
+footer div{
+    margin-right: 10%;
+}
+
+footer ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+footer ul li:first-child{
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 18px;
+}
+
+footer li a{
+    text-decoration: none;
+    color: #ffffff80;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: none;
+    transition: color 0.3s;
+}
+
+footer li a:hover{
+    color: #ffffffff;
+}
+
+.footer2{
+    background-color: #222;
+    margin: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 8px 25px 8px;
+    color: rgba(255, 255, 255, 0.796);
+    display: flex;
+    justify-content: center;
+}
+
+/*Responsive Style*/
+@media screen and (max-width:735px) {
+    .page-overview{
+        grid-template-columns: auto;
+    }
+    .price{
+        position: relative;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .price span{
+        width: 100%;
+        font-size: 150%;
+        margin-bottom: 10px;
+        border-radius: 0;
+        padding: 7px 0;
+    }
+    .price .p1{
+        position: relative;
+    }
+    .price .p2{
+        position: relative;
+    }
+}
+
+@media screen and (max-width:700px) {
+    footer{
+        flex-direction: column;
+        margin-left: auto;
+    }
+    footer h3, footer ul{
+        text-align: center;
+    }
+    footer ul li:first-child{
+        border-top: none;
+        padding: 0;
+    }
+    .item ul{
+        grid-template-columns: auto auto;
+    }
+
+    .featured-item{
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 30px;
+    }
+    .featured-item img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    #menu-list{
+        display: none;
+        grid-template-columns: auto;
+        align-items:flex-start;
+        border-top: 1px solid black;
+    }
+    .page-overview .overview-content .ovtext{
+        display: none;
+    }
+
+    header .menu-btn{
+        display: inline-block;
+    }
+    .item ul{
+        grid-template-columns: auto;
+    }
+}
