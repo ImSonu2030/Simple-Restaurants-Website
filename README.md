@@ -12,7 +12,7 @@ This is a website I build using HTML and CSS. It has total 5 component in the pa
 - And a Footer Section
 
 That is all basic need for an Food based product website. 
-This Repository contain an **`index.txt`**, **`style.css`** and some images(used in the page). 
+This Repository contain an **`index.txt`**, **`style.css`** and some image(used in the page) files. 
 
 ## Objective
 - I'm new to Web Developement Technology so this is a way to enhance my skill through making Projects.
