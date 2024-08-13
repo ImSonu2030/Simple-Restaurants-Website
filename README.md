@@ -19,7 +19,7 @@ This Repository contain an **`index.txt`**, **`style.css`** and some image(used 
 - Goal was to build a good looking landing Page using HTML & CSS and i successfully did it.
 
 ## Helpful Link:
-* [Preview Project](https://kusankumar.github.io/Simple-Restaurants-Website/)
+* [Preview Project](https://imsonu2030.github.io/Simple-Restaurants-Website/)
 * [Preview Tool](https://htmlpreview.github.io)
 * [HTML](https://www.w3schools.com/html/default.asp)
 * [CSS](https://www.w3schools.com/css/default.asp)
